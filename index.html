@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FormValidation</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <script>
+    function validateForm()
+    {
+      var name=document.myform.name.value;
+      var password=document.myform.password.value;
+      if(name==null || name=="")
+      {
+        alert("Name cannot be empty.")
+        return false;
+      }
+      else if(password.length<6)
+      {
+        alert("password must be at least 6 characters long.");
+        return false;
+      }
+    }
+  </script>
+  <body>
+    <div>
+    <fieldset class="fieldset">
+      <h1>INFORMATION TECHNOLOGY DEPARTMENT</h1>
+      <form name="myform" method="post" action="https://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateForm()">
+        Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="name">
+        <br>
+        <br>
+        Password:<input type="password" name="password">
+        <br>
+        <br>
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+      </form>
+    </fieldset>
+  </div>
+  </body>
+</html>

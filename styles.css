@@ -1,0 +1,19 @@
+body{
+  background-image: url("ezgif.com-gif-maker.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 55rem;
+}
+.fieldset{
+  background-color: #4b0082;
+  align-items: center;
+  color: yellow;
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 300px;
+}
+h1{
+  text-align: center;
+}
